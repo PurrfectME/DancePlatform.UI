@@ -23,6 +23,7 @@ import timeHelper from '../../helpers/dateHelper';
 import ImageUploading from 'react-images-uploading';
 import '../../styles/profileInfo.css';
 import Popup from '../dialog/popup';
+import storageHelper from '../../helpers/storageHelper';
 
 function DatePickerWrapper(props) {
   const {
@@ -170,7 +171,8 @@ export default function WorkshopForm(props) {
           setErrorMessage('Некорректное время');
           return;
         }
-        
+        const userId = storageHelper.getCurrentUserId();
+        values.userId = userId;
         WorkshopService.createWorkshop(values).then(response => {
           props.showFormCallback(props.showForm, response.data);
         });
@@ -401,7 +403,6 @@ export default function WorkshopForm(props) {
                       type="button"
                       onClick={onCloseClick}
                       disabled={submitting}
-                      className={classes.btn}
                     >
                       Закрыть
                     </Button>
