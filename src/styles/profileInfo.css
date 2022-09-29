@@ -1,0 +1,108 @@
+.upload__image-wrapper {
+    /* height: 350px;
+    width: 386px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* .upload__image-wrapper img {
+    margin: auto;
+} */
+
+.image-item {
+    height: inherit;
+    width: inherit;
+}
+
+.image-item img {
+    display: 'block';
+    /* margin-right: 15px; */
+    min-width: 500px;
+    min-height: 500px;
+    background-position: 'center';
+    /* background-size: 'cover'; */
+    background-repeat: 'no-repeat';
+    border-top-right-radius: 4px;
+    height: 0;
+    border-top-left-radius: 4px;
+}
+
+.profile-image-item img {
+    display: 'block';
+    /* margin-right: 15px; */
+    min-width: 300px;
+    min-height: 300px;
+    background-position: 'center';
+    /* background-size: 'cover'; */
+    background-repeat: 'no-repeat';
+    border-top-right-radius: 4px;
+    height: 0;
+    border-top-left-radius: 4px;
+}
+
+.box-image-item img {
+    display: 'block';
+    /* margin-right: 15px; */
+    min-width: 300px;
+    min-height: 300px;
+    background-position: 'center';
+    /* background-size: 'cover'; */
+    background-repeat: 'no-repeat';
+    border-top-right-radius: 4px;
+    height: 0;
+    border-top-left-radius: 4px;
+}
+
+.MuiFormHelperText-root {
+    color:red !important;
+    margin: 0;
+    font-size: 0.75rem;
+    margin-top: 3px;
+    text-align: left;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.66;
+    letter-spacing: 0.03333em;
+}
+
+.MuiButton-text {
+    padding: 6px 8px;
+    display: block !important;
+    font-family: "Pacifico";
+}
+
+button {
+    color: 'black !important';
+    background-color: '#B2C8D6 !important';
+}
+
+button:hover {
+    background-color: '#F59B69 !important';
+}
+
+.search-input {
+    margin-top: 11px;
+    margin-left: 26px;
+    box-shadow: 0 0 10px rgb(47 66 146 / 50%);
+    border-radius: 30px;
+    width: 193px;
+    height: 27px;
+}
+
+.search-input input:focus {
+    outline: none;
+}
+
+.search-input input {
+    margin-left: 8px;
+}
+
+.search-input ::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.search-label {
+    margin-top: 58px;
+    margin-left: 46px;
+}

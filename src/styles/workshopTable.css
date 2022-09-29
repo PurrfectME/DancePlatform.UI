@@ -1,0 +1,7 @@
+.Mui-selected {
+    background-color: #f7b692 !important;
+}
+
+.MuiCheckbox-colorSecondary.Mui-checked {
+    color: black !important
+}
